@@ -1,0 +1,117 @@
+body{
+    margin: 0;
+    font-family:Arial, Helvetica, sans-serif;
+    display:flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: rgb(231, 245, 245);
+}
+nav{
+    position: fixed;
+    display:flex;
+    justify-content: right;
+    width:100%;
+    
+    background-color: rgb(238, 237, 235);
+    box-shadow:  0 15px 15px lightblue;
+    padding: 15px 0;
+    z-index: 1000;
+    gap:2rem;
+    font-size: 1.2rem;
+}
+a{
+    text-decoration: none;
+}
+.sidebar{
+    width:20%;
+    background-color: rgb(42, 186, 138);
+    position: fixed;
+    height:100%;
+    overflow: auto;
+    z-index: 1000;
+}
+.item-type > ul li{
+    padding: 10px;;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    margin-right:10%;
+    left:0;
+
+}
+.main-content{
+   margin-left:20%;
+    margin-top:10%;
+    
+    padding: 6px;
+    
+}
+p{
+    padding: 5px;
+   
+}
+#Smartphone{
+    --primary:rgb(100, 100, 244);
+    --secondary:#324e9a;
+}
+#memory{
+    --primary:rgb(104, 236, 104);
+    --secondary:rgb(126, 180, 126);
+}
+#earphone{
+    --primary:rgb(226, 128, 226);
+    --secondary:rgb(223, 149, 161);
+}
+#pc{
+    --primary:rgb(97, 54, 54);
+    --secondary:rgb(149, 79, 79);
+
+}
+
+.header{
+    background-color: rgb(105, 119, 131);
+    display:flex;
+    align-items: center;
+    gap:1rem;
+    padding:1rem;
+}
+.catagory{
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0,4px 6px lightblue;
+}
+.content ul{
+    display: flex;
+    flex-direction: column;
+    gap:0.8rem;
+    background-color: white;
+
+}
+.content > ul li{
+    display: flex;
+    align-items: center;
+    gap:0.8rem;
+}
+.large-box{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:1rem;
+    padding:1.2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+@media (max-width:768px){
+    .large-box{
+        grid-template-columns: 1fr;
+    }
+}
+footer{
+    margin-left:50%;
+    margin-top: 15%;
+    font-size:2rem;
+    
+}
+#about{
+    margin:20px;
+    padding:15px;
+
+}
